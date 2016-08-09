@@ -39,7 +39,7 @@
    
 }
 .navbar-default .navbar-brand {
-    background: url(../img/nuevas/logo_negro.png) no-repeat;
+    background: url(../img/logo_negro.png) no-repeat;
 }
 
 @media (min-width: 768px) {
@@ -49,11 +49,11 @@
        height: 70px;
     }
     .navbar-default.affix-top .navbar-brand {
-    background: url(../img/nuevas/logo_negro.png) no-repeat;
+    background: url(../img/logo_negro.png) no-repeat;
  
 }
     .navbar-default.affix .navbar-brand{
-    background: url(../img/nuevas/logo_negro.png) no-repeat;
+    background: url(../img/logo_negro.png) no-repeat;
 }
 
 .img-rounded-50 {
