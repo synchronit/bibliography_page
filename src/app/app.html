@@ -1,0 +1,18 @@
+
+<div class="text-center">
+    <div id="viewMenu" class="btn-group">
+        <button (click)="changeView($event)" id="btn-details" type="button" class="btn btn-primary active">Details</button>
+        <button (click)="changeView($event)" id="btn-list" type="button" class="btn btn-primary ">List</button>
+        <button (click)="changeView($event)" id="btn-slider" type="button" class="btn btn-primary ">Slider</button>
+    </div>
+</div><br>
+
+<div *ngIf="viewStyle == 0">
+    <details-comp [books]="books"></details-comp>
+</div>
+<div *ngIf="viewStyle == 1">
+    <list-comp [books]="books"></list-comp>
+</div>
+<div *ngIf="viewStyle == 2">
+    <slider-comp [books]="books"></slider-comp>
+</div>

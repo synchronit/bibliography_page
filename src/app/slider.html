@@ -1,0 +1,77 @@
+
+<div class="container">
+    <style>
+            .carousel-control.left, .carousel-control.right {
+                background-image: none !important;
+                color: black !important;
+            }
+
+    </style>
+    <div id="carousel-id" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" >
+            <div [ngClass]="getClasses(i)" *ngFor="let book of books; let i = index">
+                <div class="container">
+                   <!-- <img style="width:100%" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzc3NyI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojN2E3YTdhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+Rmlyc3Qgc2xpZGU8L3RleHQ+PC9zdmc+">
+           -->
+                  <div style="padding:10px 10%;margin:20px 0px;" class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs">
+                            <img style="margin-top:25px" src="{{book.picture}}" class="img-responsive">
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                            <h1>{{book.title}}</h1>
+                            <p>{{book.summary}}</p>
+                            <p><a href="{{book.authorLink}}" role="button">{{book.author}}</a></p>
+                        </div>
+                     </div>
+                </div>
+            </div>           
+        </div>
+        <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+    
+</div>
+
+<!--<div class="list-group">
+    <div class="list-group-item row" *ngFor="let item of books">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><img class="img-responsive" style="padding-top:30px" src="{{item.picture}}"></div>
+        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <h3>{{item.title}}</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Summary</td>
+                        <td>{{item.summary}}</td>
+                    </tr>
+                    <tr>
+                        <td>Comments</td>
+                        <td>{{item.comments}}</td>
+                    </tr>
+                    <tr>
+                        <td>Level</td>
+                        <td>{{item.level}}</td>
+                    </tr>
+                    <tr>
+                        <td>Audience</td>
+                        <td>{{item.audience}}</td>
+                    </tr>
+                    <tr>
+                        <td>What you learn</td>
+                        <td>{{item.learnTip}}</td>
+                    </tr>
+                    <tr>
+                        <td>Author</td>
+                        <td><a href="{{item.authorLink}}">{{item.author}}</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>-->
+

@@ -1,0 +1,42 @@
+<div class="list-group">
+    <div class="list-group-item row" *ngFor="let item of books">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><img class="img-responsive" style="padding-top:30px" src="{{item.picture}}"></div>
+        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <h3>{{item.title}}</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Summary</td>
+                        <td>{{item.summary}}</td>
+                    </tr>
+                    <tr>
+                        <td>Comments</td>
+                        <td>{{item.comments}}</td>
+                    </tr>
+                    <tr>
+                        <td>Level</td>
+                        <td>{{item.level}}</td>
+                    </tr>
+                    <tr>
+                        <td>Audience</td>
+                        <td>{{item.audience}}</td>
+                    </tr>
+                    <tr>
+                        <td>What you learn</td>
+                        <td>{{item.learnTip}}</td>
+                    </tr>
+                    <tr>
+                        <td>Author</td>
+                        <td><a href="{{item.authorLink}}">{{item.author}}</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
